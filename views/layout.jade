@@ -1,0 +1,128 @@
+doctype html
+html
+  head
+    title Bootstrap Example
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='/javascripts/portfolio.js')
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand Vamshi Bachaneboina
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.menu.pull-right
+            li
+              a(href='#home') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#team') Team
+            li
+              a(href='#projects') Projects
+            li
+              a(href='#contact') Contact
+            li
+              a(href='#') Blog
+    #home.row.container-fluid
+      blockquote.homePage.text-center.col-xs-12.col-sm-12.col-md-12.col-lg-12
+        | THE SECRET TO CREATIVITY IS KNOWING HOW TO HIDE YOUR SOURCES
+        footer
+          code Albert Einstein
+      a(href='#about')
+        span
+        span
+        span
+    .row.introBox
+      h2.col-lg-4.col-sm-12.col-xs-12.col-md-4.text-center
+        i.fa.fa-eercast.fa-4x(aria-hidden='true')
+        | PLAN
+      h2.col-lg-4.col-sm-12.col-xs-12.col-md-4.text-center
+        i.fa.fa-codepen.fa-4x(aria-hidden='true')
+        | CODE
+      h2.col-lg-4.col-sm-12.col-xs-12.col-md-4.text-center
+        i.fa.fa-github.fa-4x(aria-hidden='true')
+        | OPTIMIZE
+    #about.row.container-fluid
+      h1.text-center ABOUT ME
+      hr
+      p.text-center.col-sm-12.col-xs-12.col-md-12.col-lg-12
+        | Passionate Technocrat focusing on creating new technology practices especially in JavaScript Frameworks.My aim is to build and develop an application that changes the way we live. Yeah! 'I feel passion is more important than knowledge'.Enthusiast in exploring new technologies - IoT, AI etc., As a programmer I believe in work from scratch rather relying on software tools.Plans everything from prototype to optimized.
+    #team.row.container-fluid
+      h1.text-center MY TEAM
+      hr
+      .col-xs-12.col-sm-12.col-md-4.col-lg-4
+        img.img-circle.img-responsive(src='https://scontent.fnag1-1.fna.fbcdn.net/v/t1.0-9/12074863_790739274381365_4798903495796836336_n.jpg?oh=8ef8c4e59ed3f9a5e07b83dc83d6c6e0&oe=59DD51F0', alt='vamshi', width='236', height='236')
+      .col-xs-12.col-sm-12.col-md-4.col-lg-4
+        img.img-circle.img-responsive(src='https://yt3.ggpht.com/-DvvzUuiYGos/AAAAAAAAAAI/AAAAAAAAAAA/YoUb-VzIovA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg', alt='Google', width='236', height='236')
+      .col-xs-12.col-sm-12.col-md-4.col-lg-4
+        img.img-circle.img-responsive(src='https://scontent.fnag1-1.fna.fbcdn.net/v/t1.0-9/12079060_788072837981342_7018336193838540307_n.jpg?oh=757ce67f28ffcc5ae081cd87e45932a2&oe=59D07404', alt='vamshi', width='236', height='236')
+    #projects.container-fluid
+      h1.text-center MY PROJECTS
+      hr
+      .row
+        .view.hm-zoom.column.col-xs-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+          img.img-fluid.wow.fadeInUp.img-responsive(src='https://lh3.googleusercontent.com/tG1ZVJP2JmU1umkpQ7_Wz7_h4LnyImlrHP90jGzslNwgb65qKwh1veUPacu8_Hhx1jSGz30fnZDZFXg=w1920-h974-rw')
+          .mask.flex-center
+            p.white-text PORTFOLIO
+        .view.hm-zoom.column.col-xs-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+          img.img-fluid.wow.fadeInDown.img-responsive(src='https://lh3.googleusercontent.com/defiktprZ-hnXl5xWUBtpStVKvFXSuBnvus5Rwk63kMhaCAhrx9GfXqFBuwpGS7VB5WNZvm062mAQro=w1920-h974-rw')
+          .mask.flex-center
+            p.white-text MEAN STACK APPLICATION
+        .view.hm-zoom.column.col-xs-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+          img.img-fluid.img-responsive.wow.fadeInUp(src='https://lh4.googleusercontent.com/pNEj19ecxxr9tvOrOeyToaeH3XIRo-tP9HGM3tX2s7qczuOUUsRJklRvtz6KpkogOIfPM72psqyWaG4=w1920-h974-rw')
+          .mask.flex-center
+            p.white-text CIVIL PROJECT USING JAVASCRIPT,HEROKU
+        .view.hm-zoom.column.col-xs-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+          img.img-fluid.img-responsive.wow.fadeInUp(src='https://lh5.googleusercontent.com/-R_gQy3sk0Ql3oB-ubJ4iBj0CyHGpfewO-FcMuAvmUSIWiQzDmHIdK1r_NEt-CsJKFjb3vWonJc4mn0=w1920-h974-rw')
+          .mask.flex-center
+            p.white-text INTRANET WEBSITE - SAIL
+        .view.hm-zoom.column.col-xs-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+          img.img-fluid.img-responsive.wow.fadeInDown(src='https://lh5.googleusercontent.com/1zbGdiHAf0eVQTsoze62936OPyhcgkziAfBXfHEQlxizMtUARjBbkDBV-7DTzppn3Bgp2DehqnwJfn4=w1920-h974-rw')
+          .mask.flex-center
+            p.white-text A DEDICATED PAGE
+        .view.hm-zoom.column.col-xs-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+          img.img-fluid.img-responsive.wow.fadeInDown(src='https://lh4.googleusercontent.com/Nl_bbJlZed80IYAgSiifoSe_aAZoIwAhF0H6ndN5UIiL1bGKJQhnkdyL3rQG_L8sfSrjoCvROvg4Ye4=w1920-h974')
+          .mask.flex-center
+            p.white-text SOCIAL AUTHENTICATION USING PASSPORT.JS
+    #connect.container-fluid
+      h1.text-center LET'S CONNECT
+      hr
+      .row.flex-center
+        a(href='https://www.linkedin.com/in/vamshi-bachaneboina-481806a6/', target='_blank')
+          i.fa.fa-linkedin.fa-lg(aria-hidden='true')
+        a(href='https://www.github.com/vamshi9', target='_blank')
+          i.fa.fa-github.fa-lg(aria-hidden='true')
+        a(href='https://codepen.io/frank-underwood/', target='_blank')
+          i.fa.fa-codepen(aria-hidden='true')
+        a(href='https://twitter.com/bachaneboina27', target='_blank')
+          i.fa.fa-twitter(aria-hidden='true')
+        a(href='https://plus.google.com/+VAMSHIBACHANEBOINA', target='_blank')
+          i.fa.fa-google-plus(aria-hidden='true')
+        a(href='http://vamshi-bachaneboina7.deviantart.com/', target='_blank')
+          i.fa.fa-deviantart(aria-hidden='true')
+        a(href='https://www.facebook.com/bachaneboina', target='_blank')
+          i.fa.fa-facebook-f.fa-lg(aria-hidden='true')
+        a(href='https://www.quora.com/profile/Vamshi-Bachaneboina', target='_blank')
+          i.fa.fa-quora(aria-hidden='true')
+        a(href='https://www.instagram.com/vamshi.bachaneboina/', target='_blank')
+          i.fa.fa-instagram(aria-hidden='true')
+    footer
+      .footer-copyright
+        .row.container-fluid.white-text
+          .col-xs-12.col-md-12.col-sm-12.col-lg-12.flex-center
+            | © 2017 Copyright .
+            a(href='#', rel='nofollow') VAMSHI BACHANEBOINA

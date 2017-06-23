@@ -1,0 +1,357 @@
+html, body {
+  position:relative;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.navbar-header .navbar-brand {
+  position:relative;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s ease-in;
+  font-size: .9em;
+}
+
+.navbar {
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
+  font: normal bold 25px/1.4 "Goudy Old Style",
+    Garamond,
+    "Big Caslon",
+    "Times New Roman";
+  font-weight: bold;
+  text-align: center;
+  padding: 1vw;
+}
+@media (min-width: 335px) and (max-width: 871px) {
+  .navbar-brand {
+    font: normal bold 17px/1.4 "Goudy Old Style",
+      Garamond,
+      "Big Caslon",
+      "Times New Roman";
+  }
+  .navbar {
+    font: normal bold 17px/1.4 "Goudy Old Style",
+      Garamond,
+      "Big Caslon",
+      "Times New Roman";
+  }
+}
+
+@media (max-width: 334px) {
+  .navbar {
+    font: normal bold 15px/1.4 "Goudy Old Style",
+      Garamond,
+      "Big Caslon",
+      "Times New Roman";
+  }
+}
+@media (max-width: 255px) {
+  .navbar {
+    font: normal bold 10px/1.4 "Goudy Old Style",
+      Garamond,
+      "Big Caslon",
+      "Times New Roman";
+  }
+}
+.nav.navbar-nav.pull-right li a{
+    color:#fff;
+}
+.menu li:hover {
+  border-top-style: solid;
+  border-top-color: orange;
+}
+
+.bg {
+  background: black;
+  opacity: .85;
+  padding: .35em;
+  -webkit-transition: .5s ease-in-out;
+}
+
+#home {
+  height: 100vh;
+  color: #fff;
+  background: url("/images/homeWallpaper-min.jpg")
+    fixed;
+   -webkit-filter: grayscale(200%);
+  background-size:cover;
+
+  background-repeat: no-repeat;
+}
+.homePage {
+  padding-top: 45vh;
+  color: #fff;
+  text-align: center;
+  border: none;
+  font: 3em Courier, Monaco, monospace;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .homePage {
+    font: 2em Courier, Monaco, monospace;
+  }
+}
+/**Scroll button**/
+#home a {
+  padding-top: 80px;
+}
+#home a span {
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#home a span:nth-of-type(1) {
+  top: 90vh;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#home a span:nth-of-type(2) {
+  top: 92vh;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#home a span:nth-of-type(3) {
+  top: 94vh;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/**Intro box**/
+.introBox {
+  background: #ffffff;
+  padding: 5vw 10vw 5vw 15vw;
+  box-sizing: border-box;
+}
+.introBox h2 i {
+  display: block;
+  padding: 60px;
+}
+.introBox h2 {
+  font: normal "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  color: #1e1e1e;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+/**About**/
+#about {
+  padding: 10vw;
+  color: #fff;
+  background: #1E1E1E;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+#about h1 {
+  font: normal 24px "Open Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+#about hr {
+  width: 7vw;
+}
+#about p {
+  line-height: 26px;
+  color: #ffffff;
+}
+/**team**/
+#team {
+  background: #ffffff;
+  padding: 5vw 10vw 5vw 10vw;
+  box-sizing: border-box;
+}
+#team h1 {
+  font: normal 24px "Open Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+#team hr {
+  width: 5vw;
+  border-top: 1px solid black;
+}
+
+/**projects**/
+#projects {
+  background: #1E1E1E;
+  color:#fff;
+  padding: 5vw 0 5vw 0;
+  box-sizing: border-box;
+}
+
+#projects h1 {
+  font: 23px "Open Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+#projects hr {
+  width: 6.5vw;
+}
+.column {
+  margin-bottom: 25px;
+  height: 350px;
+}
+.column img {
+  height: 350px;
+}
+/**hover effects**/
+.view {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+.view .mask{
+     position:absolute;
+     overflow:hidden;
+     opacity: 0;
+	transform: translate(0px) rotate(180deg);
+	transition: all 0.2s 0.4s ease-in-out;
+}
+.view img {
+    display: block;
+    position: relative;
+    transition: all 1.5s ease-in;
+}
+.view p{
+     font:normal 20px/1.4 "Goudy Old Style",
+      Garamond,
+      "Big Caslon",
+      "Times New Roman";
+     position:relative;
+  transform: translateX(500px) rotate(90deg);
+	transition: all 0.2s ease-in;
+}
+.view:hover img{
+     opacity:0.2;
+}
+.view:hover p{
+    transform: translateX(0px) rotate(0deg);
+	transition-delay: 0.4s;
+}
+.view:hover .mask{
+  opacity:1;
+	transition-delay: 0s;
+	transform: translate(0px, 0px);
+}
+@media (min-width: 1699px) {
+  .column img {
+    display: block;
+    width: 550px;
+  }
+}
+/**Skills**/
+#code{
+   padding: 10vw;
+  color: #fff;
+  background: #fff;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+#code h1 {
+  font: normal 24px "Open Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  color:black;
+}
+#code hr {
+  width: 2vw;
+  border-top: 1px solid black;
+}
+#code h2{
+    font: normal 20px "Open Sans", sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color:black;
+}
+#code h2 i{
+    display:block;
+}
+/**art**/
+#art{
+   padding:5vw 10vw 5vw 10vw;
+   color:#fff;
+   background:#1E1E1E;
+   box-sizing:border-box;
+}
+#art h1{
+   font: normal 24px "Open Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+#art hr{
+    width:1.7vw;
+}
+/**connect**/
+#connect {
+     background: none;
+     padding: 5vw 10vw 5vw 10vw;
+     box-sizing: border-box;
+}
+.row{
+    margin-left: 0;
+  margin-right: 0;
+}
+#connect h1{
+    font: normal 24px "Open Sans", sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+
+}
+#connect hr{
+    width:7vw;
+    border-top: 1px solid black;
+}
+#connect a{
+     padding:2.7vw;
+     color:black;
+}
+
+/**footer**/
+.footer-copyright{
+    display:block;
+    background:#1E1E1E;
+    padding:1vw;
+}
+.footer-copyright .flex-center a{
+      color:#fff;
+}
